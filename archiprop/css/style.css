@@ -1083,10 +1083,7 @@ section {
   }
 }
 
-.test-caro {
-  max-width: 710px;
-  width: 100%;
-}
+
 
 @media screen and (min-width: 768px) {
   .test-caro {
@@ -1517,4 +1514,3 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
