@@ -15,8 +15,9 @@ body {
   line-height: 27px;
 }
 
-
-
+html, body {
+  overflow-x: hidden;
+}
 
 .floating-object {
   position: absolute;
@@ -1110,7 +1111,10 @@ section {
   }
 }
 
-
+.test-caro {
+  max-width: 800px;
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) {
   .test-caro {
@@ -1270,8 +1274,8 @@ section {
 
 .post-item {
   position: relative;
-  overflow: hidden; /* Agar gambar tidak keluar dari kotak */
-  border-radius: 10px; /* Opsional, untuk sudut melengkung */
+  overflow: hidden; 
+  border-radius: 10px; 
 }
 
 .post-item .post-thumbnail {
@@ -1279,7 +1283,7 @@ section {
 }
 
 .post-item:hover .post-thumbnail {
-  transform: scale(1.1); /* Zoom 10% lebih besar */
+  transform: scale(1.1); 
 }
 
 .post-item {
@@ -1387,6 +1391,48 @@ section {
   height: 180px;
 }
 
+
+@media screen and (max-width: 1024px) {
+
+  .contact .sec-heading {
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+
+  .contact .sec-title {
+    font-size: 22px; 
+    margin-bottom: 40px; 
+  }
+
+  .contact .contact-info {
+    margin-bottom: 20px; 
+  }
+
+  .contact form {
+    margin-top: 20px;
+  }
+
+  .contact form .form-control {
+    font-size: 13px;
+    padding: 15px; 
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .contact .contact-info {
+    margin-bottom: 30px;
+  }
+
+  .contact .sec-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .contact form .form-control {
+    padding: 12px;
+  }
+}
 /*************************
  * Partners section
  */
